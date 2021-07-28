@@ -1,0 +1,45 @@
+.cv ul {
+    flex-direction: column;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv h3 {
+    margin: 8px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+}
+
+
+.cv p {
+    margin: 8px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv {
+    background-color: var(--bright);
+    margin: 2% 30% 2% 30%;
+    padding: 10px;
+    box-shadow: -5px 5px 1px var(--light);
+}
+
+a[download] {
+    text-decoration: none;
+    padding: 20px;
+    margin: 20px 5px;
+    background-color: var(--dark);
+    color: var(--mid);
+    border-radius: 3px;
+    box-shadow: -5px 5px 1px var(--light);
+}
+
+@media screen and (max-width: 438px) {
+    a[download] {
+        margin: 20px 0;
+    }
+} 
