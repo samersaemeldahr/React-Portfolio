@@ -10,9 +10,11 @@ export function Header(props) {
     return (
 
         /*html*/<header>
-            
+
             <nav>
-            <h1 class="name-title" >Samer Saim Aldhr</h1>
+                <div class="header-title">
+                <h1 class="name-title" >Samer Saem Eldahr</h1>
+                </div>
                 <ul>
                     <a href='#' onClick={() => props.setPage(<About />)} class="nav-links">About</a>
                     <a href='#' onClick={() => props.setPage(<Projects />)} class="nav-links">Projects</a>
