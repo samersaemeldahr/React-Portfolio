@@ -1,6 +1,7 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import './Contact.css'
 import { About } from '../About/About';
+import { Container } from 'react-bootstrap';
 
 export function Contact(props) {
     const [contactName, setContactName] = useState('');
@@ -10,7 +11,7 @@ export function Contact(props) {
     const handleInputChange = (e) => {
         const { name } = e.target;
         const value = e.target.value.trim().toLowerCase()
-        
+
         if (name === 'contactName') {
             setContactName(value)
         } else if (name === 'email') {
@@ -18,10 +19,9 @@ export function Contact(props) {
         } else {
             setMessage(value)
         }
-        
+
     }
-    
-    
+
     const handleFormSubmit = (e) => {
         e.preventDefault();
         //const { name } = e.target;
@@ -41,7 +41,7 @@ export function Contact(props) {
     const handleBlur = (e) => {
         const { name, value } = e.target;
         if (!value) {
-            
+
             if (name === 'contactName') {
                 setContactName(alertMessage)
             } else if (name === 'email') {
@@ -53,7 +53,7 @@ export function Contact(props) {
     }
 
     return (
-        <div>
+        <div class="contact">
             <form>
                 <input
                     value={contactName}
