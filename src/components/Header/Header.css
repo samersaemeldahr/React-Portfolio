@@ -2,32 +2,33 @@ nav {
     background-color: var(--dark);
     display: flex ;
     justify-content: center;
-
+    align-items: center;
+    grid-area: nav;
     /* width: 100%;
     min-width: 370px; */
     padding: 25px;
     position: relative;
     animation-name: example;
     animation-duration: 2s;
+
 }
 
 .name-title {
-    margin: 0%;
+
+    
 }
 
 .center-nav {
-    display: flex;
-    justify-content: space-around;
 }
 
 .nav-links {
-    margin: 0px 10px 0px 10px;
     position: relative;
     animation-name: example;
     animation-duration: 1s;
     color: var(--mid);
     text-decoration: none;
     align-content: center;
+    padding: 10px;
 }
 
 @media screen and (max-width: 800px) {
