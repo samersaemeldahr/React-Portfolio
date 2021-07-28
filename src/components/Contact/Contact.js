@@ -21,6 +21,7 @@ export function Contact(props) {
         
     }
     
+    
     const handleFormSubmit = (e) => {
         e.preventDefault();
         //const { name } = e.target;
