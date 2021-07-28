@@ -1,0 +1,44 @@
+#about-link {
+    min-height: 100vh;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    margin: 0 auto;
+    width: 60%;
+}
+
+@media screen and (max-width: 800px) {
+    .center {
+        width: 100%;
+        padding: 10%;
+        margin: 0 auto;
+    }
+}
+
+
+#aboutimage {
+    float: left;
+    width: 80vw;
+    max-width: 29rem;
+    box-shadow: -5px 5px 1px var(--dark);
+    margin: 0px 15px 15px 0px;
+}
+
+#abouttext {
+    background-color: var(--bright);
+    padding: 30px;
+    width: 100%;
+}
+
+.bio-links {
+    text-decoration: underline;
+    color: black !important;
+}
