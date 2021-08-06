@@ -68,7 +68,7 @@ export function Contact(props) {
                     name="email"
                     onChange={handleInputChange}
                     type="email"
-                    placeholder={"email"}
+                    placeholder={"Email"}
                     onBlur={handleBlur}
                 />
                 {email === 'Invalid email' && <span>Please enter valid email</span>}
@@ -77,7 +77,7 @@ export function Contact(props) {
                     name="message"
                     onChange={handleInputChange}
                     type="text"
-                    placeholder={"message..."}
+                    placeholder={"Please write your message here..."}
                     onBlur={handleBlur}
                 />
                 <button type="button" onClick={handleFormSubmit}>
